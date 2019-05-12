@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- Navbar --- */
+
+.navbar {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.navbar .logo {
+  font-size: 2.4rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.navbar .menu {
+  color: #fff;
+}
+
+.navbar .menu ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0
+}
+
+.menu li {
+  list-style: none;
+  padding: 1rem;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+/* --- Showcase --- */
+.showcase {
+  background: url('../images/showcase.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  z-index: ;
+}
+
+.showcase-text {
+  display: flex;
+  padding: 15% 0;
+}
+
+.showcase-text-items {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+.showcase-text-items h1 {
+  font-size: 2rem;
+  margin-bottom: 1.4rem;
+  text-transform: uppercase;
+}
+
+/* --- Main Content --- */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.main1 {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+.main1 h2 {
+  font-size: 1.7rem;
+}
+
+/* --- Contact --- */
+
+.contact-section {
+  background: lightgrey;
+  position: relative;
+
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 2rem;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact input[type="text"] {
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 80%
+}
+
+.contact textarea {
+  border-radius: 0.6rem;
+  height: 9rem;
+  padding: 1rem;
+  width: 80%
+}
+
+.btn {
+  border-radius: 0.6rem;
+  padding: 1rem 2.8rem;
+  background: green;
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+
+@media (min-width:600px) {
+  .navbar {
+    flex-direction: row;
+  }
+
+  .navbar .logo {
+    flex: 1;
+  }
+
+  .navbar .menu {
+    flex: 3
+  }
+
+  .navbar .menu ul {
+    flex-direction: row;
+  }
+
+  .navbar .menu ul li {
+    flex: 1;
+    text-align: center;
+  }
+
+  .showcase-text {
+    align-content: center;
+
+  }
+
+  .showcase-text-items {
+    width: 50%;
+    margin: auto;
+  }
+
+  .main-content {
+    flex-direction: row;
+    flex-flow: row wrap;
+  }
+
+  .main1 {
+    padding: 1.6rem;
+  }
+
+}
