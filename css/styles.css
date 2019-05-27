@@ -12,7 +12,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 50vh;
 }
 
 .navbar .logo {
@@ -129,27 +129,30 @@
   margin-top: 1rem;
 }
 
+footer {
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+  background: #000;
+}
+
 
 @media (min-width:600px) {
+
   .navbar {
-    flex-direction: row;
+    height: auto;
   }
 
-  .navbar .logo {
-    flex: 1;
-  }
-
-  .navbar .menu {
-    flex: 3
+  .menu {
+    display: flex;
   }
 
   .navbar .menu ul {
     flex-direction: row;
   }
 
-  .navbar .menu ul li {
-    flex: 1;
-    text-align: center;
+  .menu a {
+    justify-content: space-around;
   }
 
   .showcase-text {
@@ -168,7 +171,15 @@
   }
 
   .main1 {
-    padding: 1.6rem;
+    padding: 1.9rem;
+    flex-basis: 40%;
   }
 
+}
+
+@media (min-width:1024px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
